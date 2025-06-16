@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+
+    <h4>Check if you are eligible to attend the party</h4>
+    <input id="inp1" type="number" oninput="ageF()">
+    <p id="p1"></p>
+
+    
+
+    <script>
+        let weather = "sunny"
+
+        if (weather = "sunny"){
+        console.log("Come with an umbrella.")
+        }
+        else if (weather = "raining"){
+        console.log("Come with an umbrella.")
+        } 
+        else if (weather = "okay"){
+        console.log("No need to come with an umbrella.")
+        }
+        else {
+        console.log("Weather condition unknown.")
+        }
+
+
+        let age = 18
+
+        function ageF(){
+
+        let age = document.getElementById("inp1").value
+        if(age < 18){
+        document.getElementById("p1").innerHTML = "sorry you are not eligible to attend"
+        document.getElementById("p1").style.color = "red"    
+        }
+
+
+        else{
+        document.getElementById("p1").innerHTML = "congratulations you are eligible to attend"
+        document.getElementById("p1").style.color = "blue"
+        }
+
+        }
+
+
+        let isSunny = true
+        let isRaining = false
+        if(isSunny && isRaining){
+            console.log("come with an umbrella")
+        }
+        else{
+            console.log("no need to come with an umbrella")
+        }
+
+        let isSunny1 = true
+        let isRaining1 = true
+        if(isSunny1 && isRaining1){
+            console.log("come with an umbrella")
+        }
+        else{
+            console.log("no need to come with an umbrella")
+        }
+
+        let isSunny2 = true
+        let isRaining2 = false
+        if(isSunny2 && !isRaining2){
+            console.log("come with an umbrella")
+        }
+        else{
+            console.log("no need to come with an umbrella")
+        }
+
+        let isSunny3 = true
+        let isRaining3 = false
+        if(!isSunny3 && isRaining3){
+            console.log("come with an umbrella")
+        }
+        else{
+            console.log("no need to come with an umbrella")
+        }
+
+        let isSunny4 = true
+        let isRaining4 = false
+        if(isSunny4 || isRaining4){
+            console.log("come with an umbrella")
+        }
+        else{
+            console.log("no need to come with an umbrella")
+        }
+
+    </script>
+</body>
+</html>
